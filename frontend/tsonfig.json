@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "rootDir": "./frontend/assets",
+        "target": "es5",
+        "module": "commonjs",
+        "strict": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "./frontend/assets/**/*.ts"
+    ]
+}

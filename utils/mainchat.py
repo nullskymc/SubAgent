@@ -21,7 +21,7 @@ async def base_chat(user_input: str, history: list | None = None):
 
     prompt = ChatPromptTemplate(history)
     chain = prompt | chat_model | output_parser
-    response = chain.invoke({})
+    response = await chain.invoke({})
     # 将 AI 的回复添加到 history
     history.append(("ai", response))
 
